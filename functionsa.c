@@ -6,7 +6,11 @@ int sum()
     c=a+b;
     printf("%d",c);
 }
+void hello(){
+    printf("hellooo");
+}
 int main()
 {
     sum();
+    hello();
 }
