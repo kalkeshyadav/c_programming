@@ -1,14 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int n,i;
+    int n,pos=0;
     scanf("%d",&n);
-    for(i=31;i>=0;i--)
-    {
-        if(n>>i){
-            printf("highest:%d",i);
-            break;
-        }
+    while((n&1)==0){
+        n=n>>1;
+        pos++;
     }
-
+    printf("count:%d",pos);
 }
